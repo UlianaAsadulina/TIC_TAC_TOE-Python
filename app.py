@@ -37,3 +37,21 @@ def display_board(board):
 
 
 display_board(board)
+
+
+# initialize list of free fields
+list_free=[]
+
+def make_list_of_free_fields(board):
+    # The function browses the board and builds a list of all the free squares; 
+    # the list consists of tuples, while each tuple is a pair of row and column numbers.
+    for i in range(3):
+        for j in range(3):
+            my_tuple = (i, j,)
+            list_free.append(my_tuple)
+
+        
+make_list_of_free_fields(board) 
+print(list_free)
+
+
